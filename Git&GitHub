@@ -1,1 +1,58 @@
+# Git & GitHub
 
+Git & GitHub are different!
+
+## What is Git?
+→ Distributed Version Control System (VCS)  
+{To record changes of uploaded files}  
+{Git was created in 2005 to manage the development of the Linux Kernel}
+
+## What is Version Control?
+→ A system to record changes of file(s) over time to distinguish between versions
+
+### Why Git?
+- Tracking changes  
+- Collaboration  
+- Version Management  
+- Error Recovery  
+- Audit Trail  
+
+---
+
+## What is GitHub?
+→ A platform that provides a cloud-based Git repository hosting service  
+{Alternatives : GitLab, Bitbucket, AWS CodeCommit, Azure DevOps, SourceForge}
+
+---
+
+## Basic Terminologies:
+- **Repository (Repo):** A directory or storage space to keep files. It can be local (on computer) or remote (on GitHub)  
+- **Working Directory:** Directory on local machine where you’re currently working with your files  
+- **Staging Area:** A temporary area to prepare files for next commit  
+- **Commit:** A snapshot of repo at a specific point in time  
+- **Branch:** A parallel version of repo that allows to work on different features independently  
+- **Main / Master:** The default or primary branch of repo  
+
+### GitHub specific terms:
+- **Fork:** A copy of someone else’s repo in your GitHub account  
+- **Pull Request (PR):** A request to merge changes from one branch to another (often used for code review)  
+- **Issue:** A way to track tasks, enhancements, & bugs in project  
+- **Remote:** A version of repo, hosted on GitHub or another online platform  
+
+---
+
+## Common Git Commands:
+```bash
+git init          # Initialize a new repository
+git clone         # Copy a repository from remote
+git add           # Stage changes
+git commit        # Save changes
+git commit –amend # Add/change commit message
+git push          # Upload changes
+git pull          # Download changes
+git branch        # Manage branches
+git checkout      # Switch branches
+git merge         # Combine branches
+git status        # Check repository status
+git log           # View commit history
+git diff          # Check what changed
