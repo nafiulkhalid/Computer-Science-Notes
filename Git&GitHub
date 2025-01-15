@@ -1,58 +1,86 @@
-# Git & GitHub
+Git & Github
 
 Git & GitHub are different!
 
-## What is Git?
-→ Distributed Version Control System (VCS)  
-{To record changes of uploaded files}  
+What is Git?
+→ Distributed Verson Control System (VCS)
+{To record changes of uploaded files}
 {Git was created in 2005 to manage the development of the Linux Kernel}
 
-## What is Version Control?
+What is Version Control?
 → A system to record changes of file(s) over time to distinguish between versions
 
-### Why Git?
-- Tracking changes  
-- Collaboration  
-- Version Management  
-- Error Recovery  
-- Audit Trail  
+Why Git?
+– Tracking changes
+– Collaboration
+– Version Management
+– Error Recovery
+– Audit Trail
 
----
 
-## What is GitHub?
-→ A platform that provides a cloud-based Git repository hosting service  
+What is GitHub?
+→ A platform that provides a cloud-based Git repository hosting service
 {Alternatives : GitLab, Bitbucket, AWS CodeCommit, Azure DevOps, SourceForge}
 
----
+Basic Terminologies:
+– Repository (Repo) : A directory or storage space to keep files. It can be local (on computer) or remote (on GitHub)
+– Working Directory : Directory on local machine where you’re currently working with your files
+– Staging Area : A temporary area to prepare files for next commit
+– Commit : A snapshot of repo at a specific point in time
+– Branch : A parallel version of repo that allows to work on different features independently
+– Main / Master : The default or primary branch of repo
 
-## Basic Terminologies:
-- **Repository (Repo):** A directory or storage space to keep files. It can be local (on computer) or remote (on GitHub)  
-- **Working Directory:** Directory on local machine where you’re currently working with your files  
-- **Staging Area:** A temporary area to prepare files for next commit  
-- **Commit:** A snapshot of repo at a specific point in time  
-- **Branch:** A parallel version of repo that allows to work on different features independently  
-- **Main / Master:** The default or primary branch of repo  
+GitHub specific terms:
+– Fork : A copy of someone else’s repo in your GitHub account
+– Pull Request (PR) : A request to merge changes from one branch to another (often used for code review)
+– Issue : A way to track tasks, enhancements, & bugs in project
+– Remote : A version of repo, hosted on GitHub or another online platform
 
-### GitHub specific terms:
-- **Fork:** A copy of someone else’s repo in your GitHub account  
-- **Pull Request (PR):** A request to merge changes from one branch to another (often used for code review)  
-- **Issue:** A way to track tasks, enhancements, & bugs in project  
-- **Remote:** A version of repo, hosted on GitHub or another online platform  
+Common Git Commands:
 
----
+git init        # Initialize a new repository
+git clone       # Copy a repository from remote
+git add         # Stage changes
+git commit      # Save changes
+git commit –amend	# Add/change commit message
+git push        # Upload changes
+git pull        # Download changes
+git branch      # Manage branches
+git checkout    # Switch branches
+git merge       # Combine branches
+git status      # Check repository status
+git log		# View commit history
+git diff		# Check what changed
 
-## Common Git Commands:
-```bash
-git init          # Initialize a new repository
-git clone         # Copy a repository from remote
-git add           # Stage changes
-git commit        # Save changes
-git commit –amend # Add/change commit message
-git push          # Upload changes
-git pull          # Download changes
-git branch        # Manage branches
-git checkout      # Switch branches
-git merge         # Combine branches
-git status        # Check repository status
-git log           # View commit history
-git diff          # Check what changed
+
+→ Linking local to GitHub : 
+Git remote add origin <link>
+→ Pushing from local to GitHub : 
+Git push -u origin main
+→ Syncing changes locally
+Git pull origin main	# pull the changes made in GitHub
+→ Create a new file : 
+echo “#Project A”  > fileName.txt
+echo “It is a file” >> fileName.txt
+
+
+### Branching
+
+→ Feature Branch
+git checkout -b add-branchName	# Create & switch to branch
+
+→ Parallel Branch
+git checkout main	# Ensuring location is main
+git checkout -b add-branchName	# Create & switch to branch
+
+→ Merge
+git checkout main	# Ensuring location is main
+git merge branchName
+
+
+
+Good Practices:
+→ Commit Often : Make small changes, commit frequently with clear messages
+→ Utilize the description : Explain the ‘Why’ for the change
+→ Branch often but keep branches short-lived
+
